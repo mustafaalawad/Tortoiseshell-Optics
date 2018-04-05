@@ -1,0 +1,298 @@
+html  {
+  font-size: 18px;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width:100%;
+  max-width:960px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+/* -----NAVIGATION BAR-----*/
+.menu {
+  display:none;
+}
+
+header {
+  background: url('../images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  min-width:100%;
+  height: 30rem;
+}
+
+#navbar nav ul {
+  list-style:none;
+  color: white;
+  position:relative;
+  top:1rem;
+  font-size: 1rem;
+  background-color:cadetblue;
+  display: flex;
+  flex-direction: row;
+}
+
+nav img {
+  margin: 0 2rem 0 1rem
+}
+nav li {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.two {
+  flex-grow: 1;
+}
+
+.one {
+  margin-right: 0.5rem;
+}
+
+.three {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  header {
+    height:22rem;
+}
+#navbar nav ul {
+  position:relative;
+  top:0rem;
+}
+}
+
+@media only screen and (max-width: 586px){
+  header {
+   background-position:20%;
+   height:17rem;
+  }
+  .menu {
+    display:block;
+    flex-grow:0.1;
+  }
+  header .one,
+  .two,
+  .three {
+    display:none;
+  }
+  header .zero {
+    flex-grow:1;
+  }
+
+}
+
+/*---------SUBHEADER----------*/
+/#navbar .container {
+    background-color: aqua;
+  }
+header .flex {
+  justify-content: flex-end;
+}
+.main-bar {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:1024px) {
+
+.main-bar {
+  background-color:#ffffff;
+  padding: 2rem 3rem;
+  font-size: 1.33rem;
+  margin-top:5rem;
+  margin-right:2rem;
+}
+h1 {
+  font-size: 1.33rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+}
+
+@media only screen and (max-width:465px){
+.main-bar {
+  background-color:#ffffff;
+  margin-top:9rem;
+  margin-right:auto;
+  margin-left: auto;
+  width:100%;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align:center;
+ }
+h1 {
+  font-size:1rem;
+}
+
+}
+
+
+
+/*---REATURES---*/
+
+#features .container {
+  /border: 0.1rem solid black;
+  margin-top: 3rem;
+  /background-color: blueviolet;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+}
+
+#features .imgone {
+  width:3.5rem;
+  margin-bottom:1.3rem;
+}
+#features .imgthree {
+  width: 5rem;
+  margin-bottom:2.5rem;
+}
+
+#features .imgtwo {
+  width: 5rem;
+  margin-bottom:3rem;
+}
+#features .zwei {
+   margin-left: 6rem;
+   margin-right: 6rem;
+}
+
+@media only screen and (max-width:586px) {
+  #features .container {
+    max-width:100%;
+    flex-direction: column;
+    font-size:0.77rem;
+}
+
+#features .imgone {
+  width:4rem;
+  margin-bottom:1rem;
+  margin-top:3.77rem;
+}
+#features .imgthree {
+  width: 5.5rem;
+  margin-bottom:1rem;
+  margin-top: 1.54rem;
+}
+
+#features .imgtwo {
+  width: 5.5rem;
+  margin-top:1.54rem;
+  margin-bottom:1rem;
+}
+#features .zwei {
+   margin-left: 6rem;
+   margin-right: 6rem;
+}
+}
+
+/*HAUBT INFO*/
+
+#main-info .container {
+  width:100%;
+  margin-top:3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content:center;
+}
+
+#main-info .philosophy{
+  width: 35%;
+  margin-right:2.5rem;
+}
+
+#main-info .appointment{
+  width: 35%;
+  margin-left:2.5rem;
+}
+
+#main-info .head-line {
+
+  margin-bottom:1rem;
+  background-color: #5f9ea0;
+  color:white;
+  padding: 0.5rem 4rem 0.5rem 1.25rem ;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width:586px) {
+
+#main-info .container {
+  min-width:100%;
+  font-size:0.77rem;
+  flex-direction: column;
+}
+
+#main-info .philosophy {
+  width: 100%;
+  margin-bottom:4rem;
+}
+
+#main-info .appointment{
+  width: 100%;
+  margin-bottom:4rem;
+  margin-left: 0rem;
+}
+
+#main-info .head-line {
+  min-width:100%;
+  font-weight:bold;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  text-align:center;
+}
+
+}
+
+/*FOOTER*/
+
+#footer .container {
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#footer img {
+  margin: 4rem 1rem 4rem 4rem;
+}
+#footer h5 {
+
+  line-height:1.5rem;
+  margin: 4rem 0rem 4.5rem 0rem;
+}
+
+@media only screen and (max-width:465px) {
+#footer .container {
+  max-width: 100%;
+  justify-content:center;
+}
+#footer h5 {
+  display:none;
+}
+#footer img {
+  margin: 4rem 0rem 4.5rem 0rem;
+}
+}
